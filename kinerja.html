@@ -18,7 +18,7 @@
 <body>
     <div class="row no-gutters vh-100 loader-screen">
         <div class="col align-self-center text-white text-center">
-            <img src="" alt="logo wpp">
+            <img src="img/logo_wpp.png" alt="logo wpp">
             <h1>Apps<span class="font-weight-light">WPP</span></h1>
             <div class="laoderhorizontal">
                 <div></div>
@@ -30,43 +30,20 @@
     </div>
     <!--SIDEBAR-->
     <div class="sidebar">
-        <div class="text-center">
-            <div class="figure-menu shadow">
-                <figure><img src="img/user1.png" alt=""></figure>
-            </div>
-            <h5 class="mb-1 ">Ammy Jahnson</h5>
-            <p class="text-mute small">Sydney, Australia</p>
-        </div>
-        <br>
         <div class="row mx-0">
             <div class="col">
-                <div class="card mb-3 border-0 shadow-sm bg-template-light">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-secondary small mb-0">Balance Available</p>
-                                <h6 class="text-dark my-0">$2585.00</h6>
-                            </div>
-                            <div class="col-auto">
-                                <button class="btn btn-default button-rounded-36 shadow"><i class="material-icons">add</i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <h5 class="subtitle text-uppercase"><span>Menu</span></h5>
                 <div class="list-group main-menu">
-                    <a href="index.html" class="list-group-item list-group-item-action active">Store</a>
-                    <a href="notification.html" class="list-group-item list-group-item-action">Notification <span class="badge badge-dark text-white">2</span></a>
-                    <a href="all-products.html" class="list-group-item list-group-item-action">All Products</a>
-                    <a href="my-order.html" class="list-group-item list-group-item-action">My Order</a>
-                    <a href="profile.html" class="list-group-item list-group-item-action">My Profile</a>
-                    <a href="controls.html" class="list-group-item list-group-item-action">Pages Controls <span class="badge badge-light ml-2">Check</span></a>
-                    <a href="setting.html" class="list-group-item list-group-item-action">Settings</a>
+                    <a href="" class="list-group-item list-group-item-action active">Outlet</a>
+                    <a href="" class="list-group-item list-group-item-action">Notification <span class="badge badge-dark text-white">2</span></a>
+                    <a href="" class="list-group-item list-group-item-action">Purchase</a>
+                    <a href="" class="list-group-item list-group-item-action">Kunjungan</a>
+                    <a href="" class="list-group-item list-group-item-action">Laporan</a>
+                    <a href="" class="list-group-item list-group-item-action">Settings</a>
                     <a href="login.html" class="list-group-item list-group-item-action mt-4">Logout</a>
                 </div>
             </div>
         </div>
-
     </div>
     <!-- Main Content -->
     <div class="wrapper">
@@ -99,7 +76,7 @@
                             </span>
                         </div>
                         <div class="col pl-0">
-                            <p class="text-secondary mb-0">Total Penjualan Saldo</p>
+                            <p class="text-secondary mb-0">Grafik Penjualan Saldo</p>
                             <h3 class="text-dark my-0">Rp 3.500.000</h3>
                         </div>
                     </div>
@@ -120,7 +97,7 @@
                             </span>
                         </div>
                         <div class="col pl-0">
-                            <p class="text-secondary mb-0">Total Penjualan Perdana</p>
+                            <p class="text-secondary mb-0">Grafik Penjualan Perdana</p>
                             <h3 class="text-dark my-0">1200</h3>
                         </div>
                     </div>
@@ -131,7 +108,49 @@
                     </div>
                 </div>
             </div>
-            <h6 class="subtitle">Sales report</h6>
+
+            <div class="card mb-4 border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-auto">
+                            <span class="btn btn-default p-3">
+                                <i class="material-icons">view_module</i>
+                            </span>
+                        </div>
+                        <div class="col pl-0">
+                            <p class="text-secondary mb-0">Grafik Penjualan Stok</p>
+                            <h3 class="text-dark my-0">1200</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <canvas id="stok"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-4 border-0 shadow-sm">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-auto">
+                            <span class="btn btn-default p-3">
+                                <i class="material-icons">payment</i>
+                            </span>
+                        </div>
+                        <div class="col pl-0">
+                            <p class="text-secondary mb-0">Grafik Penjualan Voucher</p>
+                            <h3 class="text-dark my-0">1200</h3>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12">
+                            <canvas id="voucher"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h6 class="subtitle">Total Sales report - <span class="text-success">(target)</span></h6>
             <div class="row">
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="card shadow-sm border-0 mb-2">
@@ -145,6 +164,9 @@
                                     </div>
                                     <div class="progress progress-sm mt-2">
                                         <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress progress-sm mt-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
@@ -164,6 +186,9 @@
                                     <div class="progress progress-sm mt-2">
                                         <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
+                                    <div class="progress progress-sm mt-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -182,6 +207,9 @@
                                     <div class="progress progress-sm mt-2">
                                         <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
+                                    <div class="progress progress-sm mt-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -199,6 +227,9 @@
                                     </div>
                                     <div class="progress progress-sm mt-2">
                                         <div class="progress-bar bg-danger" role="progressbar" style="width: 35%" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div class="progress progress-sm mt-2">
+                                        <div class="progress-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
                                 </div>
                             </div>
@@ -345,6 +376,10 @@
             var ctx = document.getElementById('canvas').getContext('2d');
             window.myLine = new Chart(ctx, config);
             var ctx = document.getElementById('perdana').getContext('2d');
+            window.myLine = new Chart(ctx, config);
+            var ctx = document.getElementById('stok').getContext('2d');
+            window.myLine = new Chart(ctx, config);
+            var ctx = document.getElementById('voucher').getContext('2d');
             window.myLine = new Chart(ctx, config);
         };
 

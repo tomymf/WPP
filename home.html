@@ -18,7 +18,7 @@
 <body>
     <div class="row no-gutters vh-100 loader-screen">
         <div class="col align-self-center text-white text-center">
-            <img src="" alt="logo wpp">
+            <img src="img/logo_wpp.png" alt="logo wpp">
             <h1>Apps<span class="font-weight-light">WPP</span></h1>
             <div class="laoderhorizontal">
                 <div></div>
@@ -30,43 +30,20 @@
     </div>
     <!--SIDEBAR-->
     <div class="sidebar">
-        <div class="text-center">
-            <div class="figure-menu shadow">
-                <figure><img src="img/user1.png" alt=""></figure>
-            </div>
-            <h5 class="mb-1 ">Ammy Jahnson</h5>
-            <p class="text-mute small">Sydney, Australia</p>
-        </div>
-        <br>
         <div class="row mx-0">
             <div class="col">
-                <div class="card mb-3 border-0 shadow-sm bg-template-light">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-secondary small mb-0">Balance Available</p>
-                                <h6 class="text-dark my-0">$2585.00</h6>
-                            </div>
-                            <div class="col-auto">
-                                <button class="btn btn-default button-rounded-36 shadow"><i class="material-icons">add</i></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <h5 class="subtitle text-uppercase"><span>Menu</span></h5>
                 <div class="list-group main-menu">
-                    <a href="index.html" class="list-group-item list-group-item-action active">Store</a>
-                    <a href="notification.html" class="list-group-item list-group-item-action">Notification <span class="badge badge-dark text-white">2</span></a>
-                    <a href="all-products.html" class="list-group-item list-group-item-action">All Products</a>
-                    <a href="my-order.html" class="list-group-item list-group-item-action">My Order</a>
-                    <a href="profile.html" class="list-group-item list-group-item-action">My Profile</a>
-                    <a href="controls.html" class="list-group-item list-group-item-action">Pages Controls <span class="badge badge-light ml-2">Check</span></a>
-                    <a href="setting.html" class="list-group-item list-group-item-action">Settings</a>
+                    <a href="" class="list-group-item list-group-item-action active">Outlet</a>
+                    <a href="notif.html" class="list-group-item list-group-item-action">Notification <span class="badge badge-dark text-white">2</span></a>
+                    <a href="" class="list-group-item list-group-item-action">Purchase</a>
+                    <a href="" class="list-group-item list-group-item-action">Kunjungan</a>
+                    <a href="" class="list-group-item list-group-item-action">Laporan</a>
+                    <a href="" class="list-group-item list-group-item-action">Settings</a>
                     <a href="login.html" class="list-group-item list-group-item-action mt-4">Logout</a>
                 </div>
             </div>
         </div>
-
     </div>
     <!-- Main Content -->
     <div class="wrapper">
@@ -77,7 +54,7 @@
                 </div>
                 <div class="col text-center"><!--<img src="img/logo-header.png" alt="" class="header-logo">--></div>
                 <div class="col-auto">
-                    <a href="chat.html" class="btn  btn-link text-dark"><i class="material-icons">chat</i></a>
+                    <a href="notif.html" class="btn  btn-link text-dark"><i class="material-icons">chat</i></a>
                 </div>
             </div>
         </div>
@@ -327,36 +304,14 @@
         </div>
     </div>
     
-    <!-- notification
-    <div class="notification bg-white shadow border-primary">
-        <div class="row">
-            <div class="col-auto align-self-center pr-0">
-                <i class="material-icons text-primary md-36">fullscreen</i>
-            </div>
-            <div class="col">
-                <h6>Viewing in Phone?</h6>
-                <p class="mb-0 text-secondary">Double tap to enter into fullscreen mode for each page.</p>
-            </div>
-            <div class="col-auto align-self-center pl-0">
-                <button class="btn btn-link closenotification"><i class="material-icons text-secondary text-mute md-18 ">close</i></button>
-            </div>
-        </div>
-    </div>
-    notification ends -->
-    
     
     <!-- jquery, popper and bootstrap js -->
     <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>     <script src="vendor/bootstrap-4.4.1/js/bootstrap.min.js"></script>
-    <!-- cookie js -->     <script src="vendor/cookie/jquery.cookie.js"></script>
-
-    <!-- swiper js -->
+    <script src="js/popper.min.js"></script>     
+    <script src="vendor/bootstrap-4.4.1/js/bootstrap.min.js"></script>
+    <script src="vendor/cookie/jquery.cookie.js"></script>
     <script src="vendor/swiper/js/swiper.min.js"></script>
-
-    <!-- template custom js -->
     <script src="js/main.js"></script>
-
-    <!-- page level script -->
     <script>
         $(window).on('load', function() {
             /* swiper slider carousel */
@@ -390,17 +345,6 @@
                     }
                 }
             });
-
-            /* notification view and hide 
-            setTimeout(function() {
-                $('.notification').addClass('active');
-                setTimeout(function() {
-                    $('.notification').removeClass('active');
-                }, 3500);
-            }, 500);
-            $('.closenotification').on('click', function() {
-                $(this).closest('.notification').removeClass('active')
-            });*/
         });
 
     </script>
